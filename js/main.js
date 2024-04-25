@@ -185,11 +185,11 @@ $(document).ready(function () {
 //portfolio tab
 
 $(document).ready(() => {
-  // 初始化 Isotope，並將初始過濾器設置為 ".web-light" 和 ".multimedia-light"
+  // 初始化 Isotope，並將初始過濾器設置為 ".webService" 和 ".light"
   const $webGrid = $("#web .grid").isotope({
     itemSelector: ".elementItem",
     layoutMode: "fitRows",
-    filter: ".webService", // 初始過濾器設置為 web 區塊中的 ".light"
+    filter: ".webService", // 初始過濾器設置為 web 區塊中的 ".webService"
   });
 
   const $multimediaGrid = $("#multimedia .grid").isotope({
@@ -244,6 +244,8 @@ $(document).ready(() => {
     $("#multimedia").css("visibility", "visible");
   });
 });
+
+
 
 
 
